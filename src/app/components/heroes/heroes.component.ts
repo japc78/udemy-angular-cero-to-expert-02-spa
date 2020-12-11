@@ -12,14 +12,14 @@ export class HeroesComponent implements OnInit {
   heroes: Hero[] = [];
 
   constructor(
-    private _heroesService: HeroesService,
+    private heroesService: HeroesService,
     private router: Router ){}
 
   ngOnInit(): void {
-    this.heroes = this._heroesService.getHeroes();
+    this.heroes = this.heroesService.getHeroes();
   }
 
-  handleHero( idx: number ): void {
+  handleHero( idx: string ): void {
     this.router.navigate( ['/hero', idx] );
   }
 }
