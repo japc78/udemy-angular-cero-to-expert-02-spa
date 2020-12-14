@@ -19,7 +19,7 @@ export class HeroesComponent implements OnInit {
     this.heroes = this.heroesService.getHeroes();
   }
 
-  handleHero( idx: string ): void {
-    this.router.navigate( ['/hero', idx] );
-  }
+  // handleHero( idx: number ): void {
+  //   this.router.navigate( ['/hero', idx] );
+  // }
 }

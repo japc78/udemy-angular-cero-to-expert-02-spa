@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { HeroesService, Hero } from '../../services/heroes.service';
+import { HeroesService } from '../../services/heroes.service';
 
 @Component({
   selector: 'app-buscador',
@@ -23,5 +23,4 @@ export class BuscadorComponent implements OnInit {
       console.log(this.heroes);
     });
   }
-
 }
